@@ -1,16 +1,16 @@
 Запуск
-`docker-compose up -d`
+```docker-compose up -d```
 Просмотр логов
-`docker-compose logs -f`
+```docker-compose logs -f```
 Остановка
-`docker-compose down`
+```docker-compose down```
 Пересборка
-`docker-compose up -d --build`
+```docker-compose up -d --build```
 Логи
-`docker-compose logs -f bot`
+```docker-compose logs -f bot```
 Доступ в контейнер
-`docker-compose exec bot bash`
+```docker-compose exec bot bash```
 Статус контейнера
-`docker-compose ps`
+```docker-compose ps```
 Использование ресурсов
-`docker stats`
+```docker stats```
