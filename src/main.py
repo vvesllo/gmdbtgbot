@@ -2,16 +2,15 @@ import telebot
 import os
 import dotenv
 
-from commands import register_bot_commands
-from minesweeper import register_bot_minesweeper_game
+import commands
+import minesweeper
 
 def main() -> int:
     dotenv.load_dotenv()
     bot = telebot.TeleBot(os.getenv("TELEGRAM_TOKEN"))
 
-
-    register_bot_commands(bot)
-    register_bot_minesweeper_game(bot)
+    commands.register(bot)
+    minesweeper.register(bot)
 
     bot.infinity_polling()
 

@@ -2,7 +2,7 @@ import telebot
 import random
 
 
-def register_bot_minesweeper_game(bot: telebot.TeleBot) -> None:
+def register(bot: telebot.TeleBot) -> None:
     @bot.message_handler(commands=["ms"])
     def minesweeper_game(message):
         reply_markup = telebot.types.InlineKeyboardMarkup()
