@@ -1,16 +1,16 @@
-Запуск
+# Запуск
 ```docker-compose up -d```
-Просмотр логов
+# Просмотр логов
 ```docker-compose logs -f```
-Остановка
+# Остановка
 ```docker-compose down```
-Пересборка
+# Пересборка
 ```docker-compose up -d --build```
-Логи
+# Логи
 ```docker-compose logs -f bot```
-Доступ в контейнер
+# Доступ в контейнер
 ```docker-compose exec bot bash```
-Статус контейнера
+# Статус контейнера
 ```docker-compose ps```
-Использование ресурсов
+# Использование ресурсов
 ```docker stats```
