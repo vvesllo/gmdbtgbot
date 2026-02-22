@@ -1,0 +1,15 @@
+services:
+  bot:
+    build: .
+    container_name: gmdbtgbot
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - bot-network
+
+networks:
+  bot-network:
+    driver: bridge
